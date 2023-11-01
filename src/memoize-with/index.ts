@@ -1,16 +1,17 @@
-type Func<T> = (...args: any[]) => T;
+export const memoizeWith = <T extends (...args: readonly any[]) => any>(
+  resolver: (...v: Parameters<T>) => string,
+  fn: T,
+): T => {
+  const cache: Record<string, any> = {};
 
-export const memoizeWith = <T>(resolver: Func<string>, fn: Func<T>): Func<T> => {
-  const cache: Record<string, T> = {};
-
-  return (...args: unknown[]): T => {
+  return ((...args: Parameters<T>) => {
     const key = resolver(...args);
     if (cache[key]) {
-      return cache[key] as T;
+      return cache[key];
     }
 
     const result = fn(...args);
     cache[key] = result;
     return result;
-  };
+  }) as T;
 };
