@@ -13,4 +13,4 @@ export const memoizeWith = <T>(resolver: Func<string>, fn: Func<T>): Func<T> => 
     cache[key] = result;
     return result;
   };
-}
+};
