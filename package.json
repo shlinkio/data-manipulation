@@ -13,14 +13,16 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "",
+    "test": "vitest run",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
     "types": "tsc --noEmit"
   },
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "^2.3.0",
+    "@vitest/coverage-v8": "^0.34.6",
     "eslint": "^8.52.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   }
 }

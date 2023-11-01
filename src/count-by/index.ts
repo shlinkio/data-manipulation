@@ -1,7 +1,7 @@
 /**
  * Count elements of an array based on provided function
  */
-export const countBy = <T>(list: T[], fn: (a: T) => string | number): Record<string, number> => list.reduce(
+export const countBy = <T>(list: readonly T[], fn: (a: T) => string | number): Record<string, number> => list.reduce(
   (count, current) => {
     const key = fn(current);
     // eslint-disable-next-line no-param-reassign
