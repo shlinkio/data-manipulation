@@ -1,0 +1,21 @@
+{
+  "name": "@shlinkio/data-manipulation",
+  "description": "Userland implementations of some data manipulation helpers extracted from ramda",
+  "private": false,
+  "repository": "https://github.com/shlinkio/data-manipulation",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

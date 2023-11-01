@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    shlink_data_manipulation:
+        container_name: shlink_data_manipulation
+        image: node:21.1-alpine
+        volumes:
+            - ./:/shlink-data-manipulation

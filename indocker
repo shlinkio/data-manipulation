@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker compose run shlink_data_manipulation /bin/sh -c "cd /shlink-data-manipulation && $*"
