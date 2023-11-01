@@ -1,4 +1,4 @@
-type Func<T> = (...args: unknown[]) => T;
+type Func<T> = (...args: any[]) => T;
 
 export const memoizeWith = <T>(resolver: Func<string>, fn: Func<T>): Func<T> => {
   const cache: Record<string, T> = {};

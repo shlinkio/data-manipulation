@@ -19,5 +19,7 @@
     "module": "NodeNext",
     "outDir": "dist",
     "sourceMap": true,
+
+    "types": ["vite/client", "vitest/globals"]
   }
 }
