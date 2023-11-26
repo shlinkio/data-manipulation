@@ -1,1 +1,1 @@
-export const isObject = (item: any): boolean => !!item && typeof item === 'object' && !Array.isArray(item);
+export const isObject = (item: any): boolean => Object.prototype.toString.call(item) === '[object Object]';

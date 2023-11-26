@@ -6,7 +6,7 @@ describe('isObject', () => {
     [null, false],
     [[], false],
     [{}, true],
-    [new Date(), true],
+    [new Date(), false],
   ])('returns expected result', (obj, expected) => {
     expect(isObject(obj)).toEqual(expected);
   });
