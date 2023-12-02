@@ -22,7 +22,7 @@
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "^2.3.0",
     "@vitest/coverage-v8": "^0.34.6",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "typescript": "^5.3.2",
     "vitest": "^0.34.6"
   }
