@@ -11,7 +11,9 @@ export const mergeDeepRight = <T extends Record<string, any>>(target: T, source:
 
   Object.keys(source).forEach((key: keyof T) => {
     if (isObject(source[key])) {
-      output[key] = key in target ? mergeDeepRight(target[key], source[key]) : { ...source[key] };
+      output[key] = key in target && target[key] !== undefined
+        ? mergeDeepRight(target[key], source[key])
+        : { ...source[key] };
     } else {
       output[key] = source[key];
     }

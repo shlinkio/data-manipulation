@@ -32,6 +32,20 @@ describe('mergeDeepRight', () => {
         something: 'hi!',
       },
     ],
+    [
+      { foo: undefined },
+      {
+        foo: { one: 1, two: 2 },
+      },
+      {
+        foo: { one: 1, two: 2 },
+      },
+    ],
+    [
+      { foo: undefined },
+      { foo: 'something' },
+      { foo: 'something' },
+    ],
   ])('returns expected result', (target, source, expected) => {
     expect(mergeDeepRight(target, source)).toEqual(expected);
   });

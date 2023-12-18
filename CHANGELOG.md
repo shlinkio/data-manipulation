@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.0.3] - 2023-12-18
+### Added
+* *Nothing*
+
+### Changed
+* *Nothing*
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* Fix `mergeDeepRight` function not properly merging objects if key exists in target with value `undefined`.
+
+
 ## [1.0.2] - 2023-11-26
 ### Added
 * *Nothing*
