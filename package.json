@@ -21,9 +21,9 @@
   },
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "^2.3.0",
-    "@vitest/coverage-v8": "^1.2.1",
+    "@vitest/coverage-v8": "^1.2.2",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3",
-    "vitest": "^1.2.1"
+    "vitest": "^1.2.2"
   }
 }
