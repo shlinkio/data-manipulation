@@ -9,6 +9,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * *Nothing*
 
 ### Changed
+* Update JS coding standard
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* *Nothing*
+
+
+## [1.0.3] - 2023-12-18
+### Added
+* *Nothing*
+
+### Changed
 * *Nothing*
 
 ### Deprecated
