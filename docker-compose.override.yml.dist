@@ -1,5 +1,3 @@
-version: '3'
-
 services:
     shlink_data_manipulation:
         user: 1000:1000
