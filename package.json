@@ -22,7 +22,7 @@
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "~3.0.0",
     "@stylistic/eslint-plugin": "^2.3.0",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/coverage-v8": "^2.0.2",
     "eslint": "^8.57.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.34.3",
@@ -30,6 +30,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.14.1",
-    "vitest": "^1.2.2"
+    "vitest": "^2.0.2"
   }
 }
