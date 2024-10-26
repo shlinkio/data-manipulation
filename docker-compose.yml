@@ -1,6 +1,7 @@
 services:
     shlink_data_manipulation:
         container_name: shlink_data_manipulation
-        image: node:21.1-alpine
+        user: 1000:1000
+        image: node:22.10-alpine
         volumes:
             - ./:/shlink-data-manipulation
