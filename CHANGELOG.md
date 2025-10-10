@@ -4,12 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
-## [Unreleased]
+## [1.0.4] - 2025-10-10
 ### Added
 * *Nothing*
 
 ### Changed
 * Update to `@shlinkio/eslint-config-js-coding-standard` 3.0, and migrate to ESLint flat config.
+* Use trusted publishing.
 
 ### Deprecated
 * *Nothing*
