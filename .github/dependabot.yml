@@ -13,9 +13,9 @@ updates:
         patterns:
           - 'vitest'
           - '@vitest/*'
-      eslint:
+      coding-style:
         patterns:
           - '@shlinkio/eslint-config-js-coding-standard'
-          - 'typescript-eslint'
-          - '*eslint-plugin*'
-          - eslint
+          - 'oxfmt'
+          - 'oxlint'
+          - 'oxlint-tsgolint'
