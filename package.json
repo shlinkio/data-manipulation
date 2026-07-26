@@ -14,20 +14,22 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
-    "test:ci": "npm run test -- --coverage",
-    "lint": "eslint src",
-    "lint:fix": "npm run lint -- --fix",
+    "test:ci": "node --run test -- --coverage",
+    "cs": "node --run lint && node --run format:check",
+    "cs:fix": "node --run lint:fix && node --run format",
+    "lint": "oxlint src ./·config.ts",
+    "lint:fix": "node --run lint -- --fix",
+    "format": "oxfmt src ./·config.ts",
+    "format:check": "node --run format -- --check",
     "types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~3.7.0",
-    "@stylistic/eslint-plugin": "^5.7.1",
+    "@shlinkio/eslint-config-js-coding-standard": "~3.9.2",
     "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^9.39.2",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "oxfmt": "^0.60.0",
+    "oxlint": "^1.75.0",
+    "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.58.0",
     "vitest": "^4.0.3"
   }
 }

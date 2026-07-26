@@ -14,11 +14,7 @@ describe('countBy', () => {
         two: 1,
       },
     ],
-    [
-      [{ foo: 'one' }, { foo: 'one' }, { foo: 'two' }] satisfies ObjType[],
-      () => 'whatever',
-      { whatever: 3 },
-    ],
+    [[{ foo: 'one' }, { foo: 'one' }, { foo: 'two' }] satisfies ObjType[], () => 'whatever', { whatever: 3 }],
     [
       [{ foo: 'hello' }, { foo: 'something' }, { foo: 'two' }, { foo: 'three' }] satisfies ObjType[],
       (value: ObjType) => value.foo.substring(0, 1),

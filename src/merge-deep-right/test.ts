@@ -3,11 +3,7 @@ import { mergeDeepRight } from './index.js';
 describe('mergeDeepRight', () => {
   it.each([
     [{}, {}, {}],
-    [
-      { foo: 'foo' },
-      { bar: 'bar' },
-      { foo: 'foo', bar: 'bar' },
-    ],
+    [{ foo: 'foo' }, { bar: 'bar' }, { foo: 'foo', bar: 'bar' }],
     [
       { foo: 'foo', nested: { hello: 123 } },
       { bar: 'bar', nested: { hello: 456 } },
@@ -41,11 +37,7 @@ describe('mergeDeepRight', () => {
         foo: { one: 1, two: 2 },
       },
     ],
-    [
-      { foo: undefined },
-      { foo: 'something' },
-      { foo: 'something' },
-    ],
+    [{ foo: undefined }, { foo: 'something' }, { foo: 'something' }],
   ])('returns expected result', (target, source, expected) => {
     expect(mergeDeepRight(target, source)).toEqual(expected);
   });
