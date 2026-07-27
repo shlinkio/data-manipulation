@@ -24,7 +24,7 @@
     "types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~3.9.2",
+    "@shlinkio/eslint-config-js-coding-standard": "~4.0.0",
     "@vitest/coverage-v8": "^4.1.10",
     "oxfmt": "^0.60.0",
     "oxlint": "^1.75.0",
