@@ -1,5 +1,5 @@
 // @ts-expect-error This lib does not expose type definitions
-import baseConfig from '@shlinkio/eslint-config-js-coding-standard/oxc/base';
+import baseConfig from '@shlinkio/eslint-config-js-coding-standard/base';
 import { defineConfig } from 'oxlint';
 
 export default defineConfig({
