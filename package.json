@@ -26,8 +26,8 @@
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "~4.0.0",
     "@vitest/coverage-v8": "^4.1.10",
-    "oxfmt": "^0.60.0",
-    "oxlint": "^1.75.0",
+    "oxfmt": "^0.61.0",
+    "oxlint": "^1.76.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^7.0.2",
     "vitest": "^4.0.3"
